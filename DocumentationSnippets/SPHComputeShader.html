@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
+  
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+        <li><a href = ""> Related Works</a></li>
+        <li><a href = "/pages/About.html"> About Unity</a></li>
+        <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+        <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+
+   <div class = "container">
+    <div class = "tableOfContents">
+     <div style ="padding-left: 1em;"> Documentation</div>
+
+          
+        <ol >
+            <li><details  ><summary class = "toCEntry"> 
+               <ol href = "#"> Graph Visualization</ol>
+            </summary>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="#"> Overview</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphClass.html"> class Graph </a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer </a></li>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodePhysics()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodeProperties()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/EdgeClass.html"> class Edge()</a></li>
+               
+            </details></li>
+
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Biomechanics</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html"></a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class WormBody()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html"> class MuscleSystem</a></li>
+            </details></li>
+           
+             
+
+            
+            <li><details  ><summary class = "toCEntry"> 
+              <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+           </summary>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+          </details></li>
+            
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Camera</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> Overview</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class CameraController()</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class WormCamera()</li>
+
+             </details></li>
+           
+
+
+
+        </div>
+
+        <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+            <section> 
+              <h3> SPH Compute Shader</h3>
+              <p style="color: darkgray;"> CyberElegans/wormbrain/MuscleSystem/Body Segment</p>
+              
+          </section>
+            <section>
+
+              <h4> Description</h4>
+
+             <p> The compute shader is the heart of the Fluid Dynamics simulation in this project. It is used to parallelize computetation for each particle and thus make the simulation interactive.</p>
+              <p>It implements the SPH Algorithm as explained SOMEWHERE ELSE (add link)</p>  
+            </section>
+
+            <section>
+              <table style="width:auto;">
+                  <thead>
+                      <tr>
+                          <th colspan ="3"> Simulation Properties</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class = "properties">
+                          <td> Type </td>
+                          <td> Name </td>
+                          <td> Description</td>
+                      </tr>
+
+                      <tr>
+                          <td> int</td>
+                          <td> NUMBER_OF_PARTICLES</td>
+                          <td> number of particles in the particle simulation</td>
+                      </tr>
+
+                      <tr>
+                        <td> float</td>
+                        <td>PARTICLE_RADIUS</td>
+                        <td> radius of a particle</td>
+                      </tr>
+
+                     <tr>
+                        <td>float3</td>
+                        <td>GRAVITY</td>
+                        <td> Vector point in the direction of GRAVITY</td>
+                     </tr>
+
+                     <tr>
+                        <td>float</td>
+                        <td>SMOOTHING_RADIUS</td>
+                        <td>radius of the smoothing kernel</td>
+                     </tr>
+
+                     <tr>
+                        <td>float3</td>
+                        <td>HALF_BOUNDSIZE</td>
+                        <td>current dimensions of the domain divided by two. This way the bounding box reaches from -1 to 1 on each axis and boundary conditions can be tested more easily</td>
+                     </tr>
+
+                     <tr>
+                        <td>float</td>
+                        <td>STIFFNESS</td>
+                        <td>stiffness parameter for pressure estimation</td>
+                     </tr>
+
+                     <tr>
+                        <td> float</td>
+                        <td> VISCOSITY</td>
+                        <td> viscosity for the calculation of the viscous forces</td>
+                     </tr>
+
+                     <tr>
+                        <td>float</td>
+                        <td> vMax</td>
+                        <td> stores the highest velocity occuring during the time step. Required for adaptive timestepping</td>
+                     </tr>
+
+                     <tr>
+                        <td>float</td>
+                        <td>fMax</td>
+                        <td>stores the highest force occuring during the time step. Required for adaptive timestepping</td>
+                     </tr>
+
+                     <tr>
+                        <td>const float4x4</td>
+                        <td>localToWorld</td>
+                        <td>LocalToWorld Matrix that projects particle position from local into global space</td>
+                     </tr>
+
+                     <tr>
+                        <td>const float4x4</td>
+                        <td>worldToLocal</td>
+                        <td>converts global coordinates to local coordinates</td>
+                     </tr>
+
+
+                    
+
+                  </tbody>
+
+              </table>
+            </section>
+
+            <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Buffers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> RWStructuredBuffer&ltPARTICLE&gt</td>
+                            <td> PARTICLES</td>
+                            <td> Holds the particle data.</td>
+                        </tr>
+  
+                        <tr>
+                          <td> RWStructuredBuffer&ltint&gt</td>
+                          <td> CELLCOUNT</td>
+                          <td> Sparse grid containing the number of particles currently residing inside a given grid cell.</td>
+                        </tr>
+  
+                        <tr>
+                          <td> RWStructuredBuffer&ltint&gt</td>
+                          <td> CELLTRACKER</td>
+                          <td> Tracks the start index of the corresponding hash cell in the PARTICLE_MAP</td>
+                        </tr>
+
+                        <tr>
+                          <td>RWStructuredBuffer&ltint&gr</td>
+                          <td>PARTICLE_MAP</td>
+                          <td>Particle indices sorted by hash cells they reside in. starting index of a given hash cell in this array can be looked up in CELLCOUNT and CELLTRACKER</td>
+                        </tr>
+
+  
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="2"> Kernels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> InitParticles</td>
+                            <td> Initializes the particles in a grid within the domain</td>
+                        </tr>
+
+                        <tr>
+                            <td>ClearGrid</td>
+                            <td>Resets each entry of CELLCOUNT and CELLTRACKER to 0</td>
+                        </tr>
+                        <tr>
+                            <td>GridUpdate</td>
+                            <td> Hashes the particles based on their position and increments the CELLCOUNT in the given hash</td>
+                        </tr>
+                        <tr>
+                            <td>PartialSums</td>
+                            <td>Calculates the partial sums, so that the value in the CELLCOUNT buffer corresponds to the starting index of the cell in the PARTICLE_MAP</td>
+                        </tr>
+                        <tr>
+                            <td>MapParticles</td>
+                            <td>Sorts the particles in the PARTICLE_MAP by cell hash</td>
+                        </tr>
+
+                        <tr>
+                            <td>ComputeDensity</td>
+                            <td>Estimates density based on neighbor cells. Applies smoothing kernel. Also estimates pressure</td>
+                        </tr>
+
+                        <tr>
+                            <td>ComputeForces</td>
+                            <td>Computes pressure and viscosity forces.</td>
+                        </tr>
+  
+
+                        <tr>
+                            <td> Update</td>
+                            <td> performs Integration to find new particle positions and velocities based on the estimated forces. Currently emplys eulerian integration, in future verlet integration scheme will be tested. Checks against boundary penetration and keeps particles within domain.</td>
+                        </tr>
+                        </tbody>
+  
+                </table>
+              </section>
+
+              <section >
+                <div style=" background-image: url('/images/ProgramScreenshots/SPH\ in\ container.png'); background-size: contain;width:600px;height:600px;"></div>
+                <div style=" background-image: url('/images/screenshots/sph_algorithm.png'); background-size: auto;width:auto;height:600px; background-repeat: no-repeat;"></div>
+              </section>
+
+           
+          
+          </div>
+        </div>
+
+     
+        
+        <script src = "/javascript/loadhtml.js"></script>
+        </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Class</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    
+        
+
+   
+</head>
+
+
+
+<body >
+ 
+    <header>
+
+        <h1>The Virtual Worm</h1>
+        </header>
+    
+    
+        <ul class = "topnav">
+            <li><a href = "/index.html"> About</a></li>
+            <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+            <li><a href = "/pages/Documentation.html"> Related Works</a></li>
+            <li><a href = "/pages/About.html"> About Unity</a></li>
+            <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+            <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+            <input type ="text" placeholder = "Search..">
+    
+        
+        
+        
+        </ul>
+    
+       <div class = "container">
+        <div class = "tableOfContents">
+            <div style ="padding-left: 1em;"> Documentation</div>
+       
+                 
+               <ol >
+                   <li><details  ><summary class = "toCEntry"> 
+                      <ol href = "#"> Graph Visualization</ol>
+                   </summary>
+                   <li class = "toCEntry"  style="  font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphVisualizationOverview.html"></a></li>
+                   <li class = "toCEntry" href="#" style=" font-size:12pt;  text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphClass.html"> class Graph()</a></li>
+                   <li class = "toCEntry"href="#" style=" font-size:12pt; font-weight: bold; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer() </a></li>
+                   <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+                   <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node()</a></li>
+                   <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+                   <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html">class NodePhysics()</a></li>
+                   <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePropertiesClass.html">class NodeProperties()</a></li>
+                   
+                      
+                   </details></li>
+       
+                   <li><details  ><summary class = "toCEntry"> 
+                       <ol href = "#"> Biomechanics</ol>
+                    </summary>
+       
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html">Overview</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class Wormbody()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html">class MuscleSystem()</a></li>
+                   </details></li>
+                  
+                    
+       
+                   
+             <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+             </summary>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+            </details></li>
+       
+                   
+                   <li><details  ><summary class = "toCEntry"> 
+                       <ol href = "#"> Camera</ol>
+                    </summary>
+       
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> Overview</li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CameraController.html">class CameraController()</a></li>
+                    <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormCamera.html">class WormCamera()</a></li>
+       
+                    </details></li>
+                  
+       
+       
+       
+               </div>
+    
+            <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+              <section> 
+                <h3> JSON Testing</h3>
+                <p style="color: darkgray;"> CyberElegans/wormbrain/</p>
+                
+            </section>
+              <section>
+
+                <h4> Description</h4>
+
+                <p style="color: darkgray;"> inherits from UnityEngine.Monobehaviour</p>
+
+                <p>This component takes NeuroML files stored in separate JSON-files and initialzes the nodes/neurons based on this data.</p>
+                <p> For each neuron a gameobject with the <i><a href="/DocumentationSnippets/NodeClass.html">Node-</a></i>component is initialized as the soma. Neurites are made of individual line segments. Each segment is its own gameobject with a <i>LineRenderer-</i>component attached to it.</p>
+              
+
+
+
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Properties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Line</td>
+                        <td>Material for the lines representing the segments of the neurites</td>
+                    </tr>
+
+                    <tr>
+                        <td>List&ltNeuroMlCell&gt</td>
+                        <td>cells</td>
+                        <td> List holding the converted JSON NEuroML-files</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Return Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>void</td>
+                            <td>LoadNeurons()</td>
+                            <td>Loads JSON files and converts them into NeuroMLCells. Stores all converted files in <i>cells</i></td>
+                        </tr>
+
+                        <tr>
+                            <td>void</td>
+                            <td>CreateConnectome()</td>
+                            <td>Creates GameObjects for each soma and line segments in the projection</td>
+                        </tr>
+
+
+
+                       
+                    </tbody>
+
+                </table>
+              </section>
+
+             
+
+           
+            
+            </div>
+             
+
+                </div>
+            </div>
+            </div>
+    
+</body>
+</html>

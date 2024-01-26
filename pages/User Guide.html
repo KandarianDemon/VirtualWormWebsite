@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Virutal Worm</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type ="module">
+        import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+      
+      var posX = 0;
+      var posY = 0;
+
+      var towardsgoal = false;
+
+      let canvas = document.getElementById("chart");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      let ctx = canvas.getContext("2d");
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      let n = 150;
+      let m = 30;
+      let v = 3;
+    
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+
+        const tadpoles = new Array(n).fill().map(() => ({
+        vx: (Math.random() - 0.5) * v,
+        vy: (Math.random() - 0.5) * v,
+        px: new Array(m).fill(Math.random() * width),
+        py: new Array(m).fill(Math.random() * height),
+        size: Math.max(Math.random()*6,2),
+        count: 0
+        }));
+
+        function getMouse(canvas,event)
+        {
+          var rect = canvas.getBoundingClientRect();
+          return{
+            x: event.clientX - rect.left,
+            y: event.clientY - rect.top
+          };
+        }
+
+        canvas.addEventListener("mousemove", (event) => {
+          
+          var rect = canvas.getBoundingClientRect();
+          posX = event.clientX  - rect.left ;
+          posY = event.clientY- rect.top;
+        });
+
+        canvas.addEventListener("click", (tadpoles,event) => {
+
+          towardsgoal = !towardsgoal;
+
+          if(towardsgoal == false)
+          {
+            for(const t of tadpoles)
+            {
+              t.vx= (Math.random() - 0.5) * v;
+            t.vy= (Math.random() - 0.5) * v;
+            }
+          }
+         
+         
+
+        },false);
+
+        function initPosition()
+        {
+          for (const t of tadpoles) {
+
+        for(let i = 1; i<t.px.length;i++)
+        {
+          
+          let dist = Math.sqrt(t.vx*t.vx + t.vy*t.vy);
+          let dX = t.vx/dist;
+          let dY = t.vy/dist;
+          t.px[i] = t.px[0] - dX * 5; 
+          t.px[i] = t.px[0] - dX * 5; 
+        }
+
+
+          }
+        }
+
+
+        initPosition();
+
+
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0,0,innerWidth,innerHeight);
+
+
+    //draw pointer
+
+    //ctx.beginPath();
+    //ctx.ellipse(posX,posY, 10,10,0,0,4*Math.PI);
+
+    
+    //ctx.fill();
+    
+    //initialize segments
+
+  
+
+
+    for (const t of tadpoles) {
+
+      
+
+      
+
+      //Physics And Movement
+      let xdir = posX - t.px[0];
+      let ydir = posY - t.py[0];
+
+      let dist = Math.sqrt(xdir*xdir + ydir*ydir);
+
+      let dx = (towardsgoal) ? Math.abs(t.vx) *xdir/100: t.vx;
+      let dy = (towardsgoal)? Math.abs(t.vy) *ydir/100:t.vy ;
+
+      //avoid close entities
+
+      let desiredSeparation = 10;
+
+      let sumX = 0;
+      let sumY = 0;
+      
+
+      let boidCount = 0;
+
+      for(const td of tadpoles)
+      {
+
+        
+        let distX = t.px[0] - td.px[0];
+        let distY = t.py[0] - td.py[0];
+
+        let dirNorm = Math.sqrt(distX*distX + distY*distY);
+        if(dirNorm > 0 && dirNorm < desiredSeparation)
+        {
+        
+        distX /= dirNorm;
+        distY /= dirNorm;
+
+        sumX +=distX;
+        sumY +=distY;
+        boidCount ++;
+
+        }
+
+       
+
+        
+      }
+
+      if(boidCount > 0)
+      {
+        sumX/=boidCount;
+        sumY/=boidCount;
+
+        sumX*=2;
+        sumY*=2;
+
+        dx = sumX;
+        dy = sumY;
+      }
+
+
+      let x = t.px[0] += dx;
+      let y = t.py[0] += dy;
+      let speed = Math.sqrt(dx * dx + dy * dy);
+      const count = speed;
+      const k1 = -t.size - speed/200;
+
+      // Bounce off the walls.
+      if (x < 0 || x > width ) t.vx *= -1;
+      if (y < 0 || y > height) t.vy *= -1;
+
+      
+
+      // Swim!
+      for (var j = 1; j < m; ++j) {
+        const vx = x  - t.px[j];
+        const vy = y - t.py[j];
+        const k2 = Math.sin(((t.count += count) + j*0.5 ) / 100)/speed*0.8;
+        t.px[j] = (x += dx / speed * k1) - dy * k2;
+        t.py[j] = (y += dy / speed * k1) + dx * k2;
+
+        speed = Math.sqrt((dx = vx) * dx + (dy = vy) * dy);
+      }
+      
+    
+
+    //Rendering The body 
+      //Head
+    //   ctx.save();
+    //   ctx.translate(t.px[0], t.py[0]);
+    //   ctx.rotate(Math.atan2(t.vy, t.vx));
+    //   ctx.beginPath();
+    //   ctx.ellipse(0, 0, 6.5, 4, 0, 0, 2 * Math.PI);
+    //   ctx.fill();
+      
+    //   ctx.restore();
+      
+    //   // Body
+    //   ctx.beginPath();
+    //   ctx.moveTo(t.px[0], t.py[0]);
+    //   for (let i = 1; i < 3; ++i) ctx.lineTo(t.px[i], t.py[i]);
+    //   ctx.lineWidth = 4;
+    //   ctx.stroke();
+      
+      // Tail
+      ctx.beginPath();
+      ctx.moveTo(t.px[0], t.py[0]);
+      
+      for (let i = 1; i < m; ++i) 
+      
+      {
+
+     
+      ctx.lineTo(t.px[i], t.py[i]);
+      let ratio = ((i-1)/(m-1)*0.9);
+
+      ctx.lineWidth = 4*Math.sin(Math.PI*ratio);
+      ctx.strokeStyle = "rgba(10,130,180,0.3)";
+      //console.log("ratio is " + ratio);
+    
+      ctx.stroke();
+      
+
+    }
+
+   
+
+      
+      
+      
+    }
+           
+
+           
+        }
+
+
+        animate();
+
+
+      
+        
+
+
+
+
+    </script>
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "#"> Introduction</a></li>
+        <li><a href = "#"> Related Works</a></li>
+        <li><a href = "#"> About Unity</a></li>
+        <li><a href = "#"> Documentation</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+   
+   <div class = "container">
+    
+    <canvas id = "chart" style = "z-index: 0; filter: blur(2px);grid-column: 1/13; grid-row:1/13; color:black;background-color: rgb(10, 19, 59);"></canvas>
+
+    <!-- <div style="display:grid;align-items: center; grid-column: 5/8;grid-row: 5/8;background-color: rgba(255, 99, 71, 0); z-index: 1; float:left;font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;border-radius: 90rem; color:rgb(255, 248, 248); font-size: 50;text-align:center; vertical-align: middle; backdrop-filter: saturate(0%) blur(8px);"> The Virtual Worm</div> -->
+    <div class = "article" id = "test" style="color:white">
+
+      <img src="/images/brain.png" alt="" style = " grid-column: 6/13; grid-row: 2/6; object-fit: cover; width:100%; max-height:100%">
+     
+      
+      <section style = "overflow-y:visible; grid-column: 2/6; grid-row: 2/6; font-size: 12pt; font-family: Georgia, 'Times New Roman', Times, serif;">
+          <h3> Of Minds and Worms</h3>
+          
+          <p>Although a lot is known about how Neurons transmit their signals as well as the neural circuitry involved with enhancing signals, science has yet to crack this most enigmatic of all organs. <p> We know, which areas are implicated in different tasks, e.g. processing sensory information of different modalities, we also know which areas are implicated witht the formation of personality , the planning and execution of planning. We know the neurobiological basis of addiction, diseases of the brain and learned about the transfer of information between brain and body.</p>
+          <p> But what makes me "Me" and what makes you "you"? How does the brain coordinate behaviour? How did the brain evolve to ponder about itself?</p>
+      </section>
+
+      <img src="/images/bw_head_interneurons.png" alt="" style = "grid-column: 2/6; grid-row: 6/10; object-fit: cover; width:100%; height:100%;">
+     
+      
+      <section style = "overflow-y:visible; grid-column: 6/13; grid-row: 6/9; font-size: 12pt; font-family: Georgia, 'Times New Roman', Times, serif; ">
+          
+         <p> In order to understand human brains, it is natural to investigate the brains of close relatives, like mice, rats or chimpanzees. However, their brains are just as complex as ours with billions of neurons and an unfathomable amount of highly plastic synapses. Brains and nervous systems are highly dynamic in nature, as they must be in order to adapt to changes in the environment.</p>
+         <p> So, what to do if one wants to understand the system as a whole and not only parts of it? Just like the CPU of a computer is an important part of a computers functionality, dissecting and studying the CPU alone will not explain how the entire computer works.</p>
+         <p style=" font-style: italic; color: red;"> Add interactive network graph here, next to a section of a mouse brain. drive home point, that you can actually name each individual neuron of c elegans nervous system </p>
+      </section>
+    
+
+   
+       
+
+  
+    
+
+    <!-- <img src="/images/_81580ab8-f2ef-4aa1-9033-32914852084d.jfif" alt="" style="grid-column: 4/10; grid-row: 1/10; animation: wormMoving linear 2s infinite">
+    
+    <section style = "grid-column: 4/8; grid-row: 4/4;"> Eye
+    
+       
+    
+    </section>
+    <section style = "grid-column: 10/12; grid-row: 4/4;"> Elegant Hat</section>
+    <section style = "grid-column: 4/8; grid-row: 9/9;"> Capacitor</section>
+    <section style = "grid-column: 10/10; grid-row: 9/9;"> Resistor</section> -->
+
+
+    <div class = "pageturner">
+        <div class = "turnback"> < </div>
+        <div class = "turnnext"> > </div>
+    </div>
+    
+    
+   </div>
+
+</body>
+
+</html>

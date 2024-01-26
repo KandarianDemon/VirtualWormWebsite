@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
+  
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+        <li><a href = ""> Related Works</a></li>
+        <li><a href = "/pages/About.html"> About Unity</a></li>
+        <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+        <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+
+   <div class = "container">
+    <div class = "tableOfContents">
+     <div style ="padding-left: 1em;"> Documentation</div>
+
+          
+        <ol >
+            <li><details  ><summary class = "toCEntry"> 
+               <ol href = "#"> Graph Visualization</ol>
+            </summary>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="#"> Overview</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphClass.html"> class Graph </a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer </a></li>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodePhysics()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodeProperties()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/EdgeClass.html">class Edge()</a></li>
+               
+            </details></li>
+
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Biomechanics</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html"></a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class WormBody()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html"> class MuscleSystem</a></li>
+            </details></li>
+           
+             
+
+             
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+             </summary>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+            </details></li>
+
+            
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Camera</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> Overview</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class CameraController()</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class WormCamera()</li>
+
+             </details></li>
+           
+
+
+
+        </div>
+
+        <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+            <section> 
+              <h3> GLLines</h3>
+              <p style="color: darkgray;">
+          </section>
+            <section>
+
+              <h4> Description</h4>
+              <p style="color: darkgray;"> inherits from UnityEngine.Monobheviour
+                <p>This class acts as a domain for the fluid simulation. The class name stems from experimenting with the GLLines API, which can be used to draw lines and shapes during runtime in the game. Here, it is used to draw the boundaries of the simulation domain.</p>
+                <p> The domain can be interacted with during runtime, meaning that its rotation, scale and position can be manipulated by the user.</p>
+                <p> Everything inside the domain is then affected by manipulations to the domain, which means you get some nice splish splashing fluids :-) </p>
+
+                
+
+
+            </section>
+
+            <section>
+              <table style="width:auto;">
+                  <thead>
+                      <tr>
+                          <th colspan ="3"> Properties</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class = "properties">
+                          <td> Type </td>
+                          <td> Name </td>
+                          <td> Description</td>
+                      </tr>
+
+                      
+
+                      <tr>
+                        <td> Vector3</td>
+                        <td> dimensions</td>
+                        <td> the dimensions of the domain. dimensions derive from transform.localScale</td>
+                      </tr>
+
+                      <tr>
+                        <td> Material</td>
+                        <td> lineMaterial</td>
+                        <td> material of the lines to be drawn</td>
+                      </tr>
+
+                      
+                      <tr>
+                        <td> readonly int[]</td>
+                        <td> bbox_triangles</td>
+                        <td> triangle indices of all tris in the bounding box as a triangle soup</td>
+                      </tr>
+                  </tbody>
+
+              </table>
+            </section>
+
+            <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> static void</td>
+                            <td> CreateLineMaterial()</td>
+                            <td> initializes the line material and loads the corresponding shader. Sets alpha, blend distance and culling to CullMode.Off</td>
+                        </tr>
+
+                        <tr>
+                            <td> Vector3</td>
+                            <td> GetDimensions()</td>
+                            <td> returns transform.localScale</td>
+                        </tr>
+
+                        <tr>
+                            <td> void</td>
+                            <td> Draw()</td>
+                            <td>Draws the lines of the bounding box. The Bounding Box is defined in local space. Corner Points are then transformed to world space for drawing.</td>
+                        </tr>
+  
+                       
+  
+                    </tbody>
+  
+                </table>
+              </section>
+
+            <section>
+              <h4>Example Code</h4>
+              <div style="background-image: url('/images/screenshots/GLLines.PNG');filter:invert(100%); width:800px;height:800px; background-size: contain;"></div>
+            </section>
+          
+          </div>
+        </div>
+
+     
+        
+        <script src = "/javascript/loadhtml.js"></script>
+        </body>
+</html>

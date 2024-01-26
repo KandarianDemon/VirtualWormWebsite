@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation/ Graph Visualization/ NodeVisuals</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
+  
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+        <li><a href = ""> Related Works</a></li>
+        <li><a href = "/pages/About.html"> About Unity</a></li>
+        <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+        <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+
+   <div class = "container">
+    <div class = "tableOfContents">
+     <div style ="padding-left: 1em;"> Documentation</div>
+
+          
+        <ol >
+            <li><details  ><summary class = "toCEntry"> 
+               <ol href = "#"> Graph Visualization</ol>
+            </summary>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="#"> Overview</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphClass.html"> class Graph </a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer </a></li>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodePhysics()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodeProperties()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class NodePhysics()</li>
+               
+            </details></li>
+
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Biomechanics</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html"></a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class WormBody()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html"> class MuscleSystem</a></li>
+            </details></li>
+           
+             
+
+            <li><details  ><summary class = "toCEntry"> 
+              <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+           </summary>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+          </details></li>
+
+            
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Camera</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> Overview</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class CameraController()</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class WormCamera()</li>
+
+             </details></li>
+           
+
+
+
+        </div>
+
+        <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+            <section> 
+              <h3> NodeVisuals</h3>
+              <p style="color: darkgray;"> CyberElegans/ wormbrain/ Graph/ NodeVisuals</p>
+              
+          </section>
+            <section>
+
+              <h4> Description</h4>
+
+                <p>The <i>Node Visual</i>-class handles anything related to the visual appearance of a <i><a href="/DocumentationSnippets/NodeClass.html">Node</a></i>. E.g. if any interaction events occur, the Nodes color and size are changed to indicate that it is currently in focus. Depending on the <i><a href="/DocumentationSnippets/GraphContainerClass.html">GraphContainers</a> </i> recursionLevel, downstream connected Nodes/neurons are also triggered to be highlighted.</p>
+
+
+
+            </section>
+
+            <section>
+              <table style="width:auto;">
+                  <thead>
+                      <tr>
+                          <th colspan ="3"> Properties</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class = "properties">
+                          <td> Type </td>
+                          <td> Name </td>
+                          <td> Description</td>
+                      </tr>
+
+                      <tr>
+                          <td> MeshRenderer</td>
+                          <td> renderer</td>
+                          <td> Unity-class. Renders mesh data as a 3D object</td>
+                      </tr>
+
+                      <tr>
+                        <td> Material</td>
+                        <td> material</td>
+                        <td> Material and shader, which is applied to the mesh stored in <i>renderer</i></td>
+                      </tr>
+
+                      <tr>
+                        <td> GameObject</td>
+                        <td> nodeBody</td>
+                        <td> GameObject which holds the mesh representing the node. In this case the nodes are rendered as spheres, but it can be any arbitrary shape.</td>
+                      </tr>
+                      
+                      <tr>
+                        <td> List<`Node></td>
+                        <td> connectedNodes</td>
+                        <td> List containing all the nodes connected to this Node</td>
+                      </tr>
+
+                      <tr>
+                        <td> List`<`LineRenderer></td>
+                        <td> lines</td>
+                        <td> List of all the gameobjects parented to this node, which contain a connection between two nodes. LineRenderers draw the corresponding lines</td>
+                      </tr>
+
+                      
+                      <tr>
+                        <td> Material</td>
+                        <td> LineMaterial</td>
+                        <td> Material applied to the respective lines. Uses a custom <i>lineShader</i></td>
+                      </tr>
+
+                      
+                      <tr>
+                        <td> float</td>
+                        <td> lw</td>
+                        <td> represents the lineweigth</td>
+                      </tr>
+
+                      
+                      <tr>
+                        <td> float</td>
+                        <td> radius</td>
+                        <td> radius of the sphere representing the Node body</td>
+                      </tr>
+                  </tbody>
+
+              </table>
+            </section>
+
+            <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> void </td>
+                            <td> ChangeSize(float size)</td>
+                            <td> Changes size of the object by the supplied value</td>
+                        </tr>
+  
+                        <tr>
+                          <td> void</td>
+                          <td> ChangeColor(Color newColor)</td>
+                          <td> Changes color of the node to the provided color</td>
+                        </tr>
+  
+                        <tr>
+                          <td> void</td>
+                          <td> ChangeLineSet(GameObject container)</td>
+                          <td> Changes the lines representing the connections. Either anatomically connections, or connectivty can be chosen</td>
+                        </tr>
+  
+                        <tr>
+                          <td> void</td>
+                          <td> Reset()</td>
+                          <td> Resets all changed values to the default ones</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> SetColor(Color color)</td>
+                          <td> Sets the default color</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> UpdateLines(Rigidbody start, Rigidbody end)</td>
+                          <td> Updates the position of the Lines being drawn. Especially important if <i>physics</i> is <i>true</i> during <i>Force Directed Mode</i></td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> InitConnectedNodes()</td>
+                          <td> Subscribes the <i>Recursion()</i> method of the connected nodes to the <i>pointerEnter</i>-event.</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> InitLines(GameObject container)</td>
+                          <td> Adds all lines in the container to the lines List</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> ClearLines()</td>
+                          <td> clears all entries from the lines-list</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> Recursion(int level, ref onPointerExit exit)</td>
+                          <td> Recursive function that decreases the provided recursion level. Adds connected nodes to the pointerExit event. Every connected node within recursion level is highlighted along with the respective connections</td>
+                        </tr>
+
+                        <tr>
+                          <td> void</td>
+                          <td> SetRecursionLevel(int level)</td>
+                          <td> Sets the recursionLevel of this node to the provided level</td>
+                        </tr>
+                    </tbody>
+  
+                </table>
+              </section>
+
+            <section>
+              <h4>Example Code</h4>
+              <div style="background-color:black; width:800px;height:800px"></div>
+            </section>
+          
+          </div>
+        </div>
+
+     
+        
+        <script src = "/javascript/loadhtml.js"></script>
+        </body>
+</html>

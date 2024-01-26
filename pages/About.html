@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+<script type = "module">
+
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+
+
+let canvas = document.getElementById("panel2");
+let data = d3.csv("/Data/connectome_adjacency_matrix_cleaned_drop.csv");
+
+var svg = d3.select("#panel2")
+    .append("svg")
+        .attr("width", canvas.innerWidth)
+        .attr("height", canvas.innerHeight)
+    .append("g")
+        
+
+    
+
+
+
+
+</script>
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <div class = "topnav">
+        <a href = "/index.html"> About</a>
+        <a href = "#"> Introduction</a>
+        <a href = "#"> Related Works</a>
+        <a href = "#"> About Unity</a>
+        <a href = "#"> Documentation</a>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </div>
+
+   <div class = "container">
+    
+
+    <div style="background-image: url(/images/_7aae2c72-b1bd-4946-a54b-4a4fa245d638.jfif); background-size: contain; grid-column: 1/3; grid-row: 1/5;"></div>
+    <canvas id = "panel2" style="background-color: black; grid-column: 3/8; grid-row: 1/9; background-size: cover; height:100%; width:100%"> Panel 2</canvas>
+    <div style="background-image: url(/images/ProgramScreenshots/Unity_Worm_bg_transparent.png); background-size: contain; background-repeat: no-repeat; background-position: center; grid-column: 8/13; grid-row: 1/5; ">Panel 3</div>
+    <div style="background-color: rgb(255, 255, 255); color: black;font-family: Georgia, 'Times New Roman', Times, serif; font-size: 10pt; grid-column: 1/3; grid-row: 5/13;"> <section style="font-size: 12pt; text-align: justify; margin: 10px; padding: 10px;">A nervous system with only 302 neurons begs to be visualized, especially if all of the neurons are known by name and lineage, often with known roles and main neurotransmitters. There are extensive online ressources, that curate the accumulated knowledge of C elegans neurobiology, but none of it make the nervous system tangible.
+        So, one of the goals was to provide this missing piece and add the possibility to visualize connectivity data interactively in three dimensions. 1 was to provide a tool that lets someone investigate the nervous system of c elegans interactively, while providing the accumulated knowledge found in wormatlas or wormbook. 2) A second goal was then to provide a tangible interface to interact with a simulation of the neural dynamics.
+        </section></div>
+    <div style="background-color: black; grid-column: 3/8; grid-row: 9/13; border-radius: 0px 20px 0px 0px;">Panel 5</div>
+    <div style="background-color: black; grid-column: 8/13; grid-row: 5/13; border-radius:25% 0% 0% 0%;">Panel 6</div>
+    <div class = "pageturner">
+        <div class = "turnback"> < </div>
+        <div class = "turnnext"> > </div>
+    </div>
+    
+    
+   </div>
+
+</body>
+
+</html>

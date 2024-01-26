@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
+  
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+        <li><a href = ""> Related Works</a></li>
+        <li><a href = "/pages/About.html"> About Unity</a></li>
+        <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+        <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+
+   <div class = "container">
+    <div class = "tableOfContents">
+     <div style ="padding-left: 1em;"> Documentation</div>
+
+          
+        <ol >
+            <li><details  ><summary class = "toCEntry"> 
+               <ol href = "#"> Graph Visualization</ol>
+            </summary>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="#"> Overview</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphClass.html"> class Graph </a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer </a></li>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodePhysics()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodeProperties()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/EdgeClass.html">class Edge()</a></li>
+               
+            </details></li>
+
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Biomechanics</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html"></a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class WormBody()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html"> class MuscleSystem</a></li>
+            </details></li>
+           
+             
+
+           
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+             </summary>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+            </details></li>
+
+            
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Camera</ol>
+             </summary>
+
+            
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CameraController.html">class CameraController()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormCamera.html">class WormCamera()</a></li>
+
+             </details></li>
+           
+
+
+
+        </div>
+
+        <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+            <section> 
+              <h3> Camera Controller</h3>
+              <p style="color: darkgray;"> CyberElegans/
+          </section>
+            <section>
+
+              <h4> Description</h4>
+              <p style="color: darkgray;"> inherits from UnityEngine.Monobheviour
+                <p>A camera controller that lets the user navigate the 3D scene. Takes the keyboard and mouse input and updates the transform of the camera.</p>
+                <p>Clicking on an object, e.g. Nodes/Neurons centers the camera in on that object</p>
+
+
+            </section>
+
+            <section>
+              <table style="width:auto;">
+                  <thead>
+                      <tr>
+                          <th colspan ="3"> Properties</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class = "properties">
+                          <td> Type </td>
+                          <td> Name </td>
+                          <td> Description</td>
+                      </tr>
+
+                      
+
+                      <tr>
+                        <td> float</td>
+                        <td> speed</td>
+                        <td> speed of the camera movement</td>
+                      </tr>
+
+                      <tr>
+                        <td> float</td>
+                        <td> sensitivity</td>
+                        <td> sensitivity of mouse movement and rotation</td>
+                      </tr>
+                  </tbody>
+
+              </table>
+            </section>
+
+            <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> void</td>
+                            <td> MoveCamera()</td>
+                            <td> Moves the Camera based on User input</td>
+                        </tr>
+  
+                       
+  
+                    </tbody>
+  
+                </table>
+              </section>
+
+              <section style="padding-top: 5rem;">
+                <div style="background-image: url('/images/screenshots/CameraControllerInspector.PNG'); background-size:contain; width:600px; height:600px; background-repeat: no-repeat;">
+
+                </div>
+              </section>
+
+          
+          
+          </div>
+        </div>
+
+     
+        
+        <script src = "/javascript/loadhtml.js"></script>
+        </body>
+</html>

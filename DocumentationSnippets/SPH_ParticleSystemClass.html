@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+   
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    
+  
+        
+
+   
+</head>
+
+<body>
+
+    <header>
+
+    <h1>The Virtual Worm</h1>
+    </header>
+
+
+    <ul class = "topnav">
+        <li><a href = "/index.html"> About</a></li>
+        <li><a href = "/pages/Introduction.html"> Introduction</a></li>
+        <li><a href = ""> Related Works</a></li>
+        <li><a href = "/pages/About.html"> About Unity</a></li>
+        <li><a href = "/pages/User Guide.html"> Documentation</a></li>
+        <li><a href = "/pages/pipeline.html"> Pipeline</a></li>
+        <input type ="text" placeholder = "Search..">
+
+    
+    
+    
+    </ul>
+
+   <div class = "container">
+    <div class = "tableOfContents">
+     <div style ="padding-left: 1em;"> Documentation</div>
+
+          
+        <ol >
+            <li><details  ><summary class = "toCEntry"> 
+               <ol href = "#"> Graph Visualization</ol>
+            </summary>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="#"> Overview</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href ="/DocumentationSnippets/GraphClass.html"> class Graph </a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href ="/DocumentationSnippets/GraphContainerClass.html"> class GraphContainer </a></li>
+            <li class = "toCEntry" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GraphUtilitiesClass.html"> class GraphUtilities</a> </li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeClass.html">class Node</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodeVisualsClass.html">class NodeVisuals()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodePhysics()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/NodePhysicsClass.html"> class NodeProperties()</a></li>
+            <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%; margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/EdgeClass.html"> class Edge()</a></li>
+               
+            </details></li>
+
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Biomechanics</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BioMechanicsOverview.html"></a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/WormBodyClass.html">class WormBody()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"><a href="/DocumentationSnippets/SpringPhysicsClass.html">class SpringPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/BodySegmentClass.html">class BodySegment()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/CentralPatternGeneratorClass.html">class CentralPatternGenerator()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/DragPhysicsClass.html">class DragPhysics()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SpringMuscleClass.html">class SpringMuscle()</a></li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/MuscleSystem.html"> class MuscleSystem</a></li>
+            </details></li>
+           
+             
+
+            
+            <li><details  ><summary class = "toCEntry"> 
+              <ol href = "#"> Smoothed Particle Hydrodynamics</ol>
+           </summary>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHOverview.html">Overview</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/ParticleClass.html">struct Particle()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/GLLinesClass.html">class GLLines()</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPHComputeShader.html">SPH ComputeShader</a></li>
+           <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> <a href="/DocumentationSnippets/SPH_ParticleSystemClass.html">class ParticleSystem()</a></li>
+          </details></li>
+            
+            <li><details  ><summary class = "toCEntry"> 
+                <ol href = "#"> Camera</ol>
+             </summary>
+
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> Overview</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class CameraController()</li>
+             <li class = "toCEntry"href="#" style=" font-size:12pt; text-decoration:none; border-bottom:0px; padding-top:3%; padding-bottom:3%;margin-right:1rem;text-align:left;padding-left: 4rem; padding-top:1rem"> class WormCamera()</li>
+
+             </details></li>
+           
+
+
+
+        </div>
+
+        <div class = "articleContainer" style="display:block!important;background-color: white;" id = "snippet">
+            
+            <section> 
+              <h3> Particle System</h3>
+              <p style="color: darkgray;"> CyberElegans/wormbrain/MuscleSystem/Body Segment</p>
+              
+          </section>
+            <section>
+
+              <h4> Description</h4>
+
+                <p> A particle system manages all the particles in the simulation. Here, the class also serves an interface to manipulate the particles during runtime to facilitate debugging. One could modularize this even further, but for now it works and will suffice.</p>
+                <p> Here, its also used for debugging and use within the Unity Editor.</p>
+            </section>
+
+            <section>
+              <table style="width:auto;">
+                  <thead>
+                      <tr>
+                          <th colspan ="3"> Particle and Domain settings</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class = "properties">
+                          <td> Type </td>
+                          <td> Name </td>
+                          <td> Description</td>
+                      </tr>
+
+                      <tr>
+                          <td> int</td>
+                          <td> numberOfParticles</td>
+                          <td> number of particles in the particle system</td>
+                      </tr>
+
+                      <tr>
+                        <td> Vector3</td>
+                        <td>initialVelocity</td>
+                        <td> velocity upon initialization of the particle system</td>
+                      </tr>
+
+                    
+
+                      
+                      <tr>
+                        <td> GameObject</td>
+                        <td> domain</td>
+                        <td> simulation domain. -> <a href="/DocumentationSnippets/GLLinesClass.html"> GlLines</a></td>
+                      </tr>
+
+                      <tr>
+                        <td> bool</td>
+                        <td> runSimulation</td>
+                        <td> toggles simulation</td>
+                      </tr>
+
+
+                    
+
+                  </tbody>
+
+              </table>
+            </section>
+
+            <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Debbuging properties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> int</td>
+                            <td> visMode</td>
+                            <td> toggles color scheme of the particles. density, velocity or pressure. Helps visualizing what is going on in the simulation.</td>
+                        </tr>
+  
+                        <tr>
+                          <td> float</td>
+                          <td> maxDensity</td>
+                          <td> sets the maximum density for interpolating the particles current density and translating it into a color value.</td>
+                        </tr>
+  
+                        <tr>
+                          <td> float</td>
+                          <td> maxVelocity</td>
+                          <td> sets the maximum velocity the particles current velocity is compared to.</td>
+                        </tr>
+
+                        <tr>
+                          <td>float</td>
+                          <td>maxPressure</td>
+                          <td>sets the maximum pressure against which the particles current pressure is compared to for visualization.</td>
+                        </tr>
+  
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> SPH Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> float</td>
+                            <td> smoothingRadius</td>
+                            <td> radius of the smoothing kernels applied- Implicitly determines the size of the grid cells. Default: 0.35</td>
+                        </tr>
+  
+                        <tr>
+                          <td> float</td>
+                          <td> stiffness</td>
+                          <td> stiffness parameter for the pressure estimation in the compute shader</td>
+                        </tr>
+  
+                        <tr>
+                          <td> float</td>
+                          <td> dynamicViscosity</td>
+                          <td> viscosity of the fluid. Default: 0.05</td>
+                        </tr>
+
+                        <tr>
+                          <td>float</td>
+                          <td>particleRadius</td>
+                          <td>radius of the particles.Default: 0.02</td>
+                        </tr>
+  
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> COmpute Shader properties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                        <tr>
+                            <td> ComputeShader</td>
+                            <td> shader</td>
+                            <td> Compute shader, which performs the SPH algorithm</td>
+                        </tr>
+  
+                        <tr>
+                          <td> ComputeBuffer</td>
+                          <td> PARTICLES</td>
+                          <td> ComputeBuffer which holds all the particles on the GPU.</td>
+                        </tr>
+  
+                        <tr>
+                          <td> Particle[]</td>
+                          <td> particles</td>
+                          <td> Array of particles represents particle on the CPU-side. This data is linked to the corresponding ComputeBuffer</td>
+                        </tr>
+
+                        <tr>
+                          <td>ComputeBuffer</td>
+                          <td>CELLCOUNT</td>
+                          <td>represents the grid data structure used to track the location of the particles. here, its used to count the number of particles in each cell or hash-location.</td>
+                        </tr>
+
+                        <tr>
+                          <td>int[]</td>
+                          <td>cellcount</td>
+                          <td>cpu side array of cellcount.</td>
+                        </tr>
+
+                        <tr>
+                          <td>ComputeBuffer</td>
+                          <td>PARTICLE_MAP</td>
+                          <td> Buffer of the same size as PARTICLES, but sorted by hash.stores the index of the particle in the particle buffer. particles located in a given hash location can be found by looking for the hashes start index in the particleMap</td>
+                        </tr>
+
+                        <tr>
+                          <td>int[]</td>
+                          <td>particleMap</td>
+                          <td>cpu side int array representing the sorted particles</td>
+                        </tr>
+                        <tr>
+                          <td>ComputeBuffer</td>
+                          <td>CELLTRACKER</td>
+                          <td>tracks the start indices of the hash cell in the particleMap</td>
+                        </tr>
+
+                        <tr>
+                          <td> int[]</td>
+                          <td> celltracker</td>
+                          <td> cpu-side int[] </td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_init;</td>
+                          <td>toggles Particle Initialization kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_clearGrid</td>
+                          <td>toggles ClearGrid kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_gridUpdate</td>
+                          <td>toggles GridUpdate kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_density</td>
+                          <td>toggles density estimation kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_forces</td>
+                          <td>toggles force calculation kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_mapParticles</td>
+                          <td> toggles MapParticles kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_neighborSearch</td>
+                          <td> toggles neighborsearch kernel</td>
+                        </tr>
+
+                        <tr>
+                          <td>bool</td>
+                          <td>disp_pressure</td>
+                          <td>toggles presure kernel</td>
+                        </tr>
+
+
+  
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Rendering properties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+
+                        <tr>
+                          <td>Material</td>
+                          <td>renderMaterial</td>
+                          <td>particle material</td>
+                        </tr>
+
+                        <tr>
+                          <td>ComputeBuffer</td>
+                          <td>argsBuffer</td>
+                          <td>Buffer that contains arguments for <i>Graphics.DrawMeshInstancedProcedural</i></td>
+                        </tr>
+
+                        <tr>
+                          <td>uint[]</td>
+                          <td>args</td>
+                          <td> contains the arguments, which are linked to the <i>argsBuffer</i></td>
+                        </tr>
+
+                        <tr>
+                          <td>Mesh</td>
+                          <td>particleMesh</td>
+                          <td>mesh, that represents the Particle. If no particleMesh is present, particles wil be rendered as a billboard sprite</td>
+                        </tr>
+
+                    </tbody>
+  
+                </table>
+              </section>
+
+              <section>
+                <table style="width:auto;">
+                    <thead>
+                        <tr>
+                            <th colspan ="3"> Methods</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "properties">
+                            <td> Type </td>
+                            <td> Name </td>
+                            <td> Description</td>
+                        </tr>
+  
+                    <tr>
+                      <td>void</td>
+                      <td>InitialzeParticles()</td>
+                      <td>initializes the particles</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>CreateBuffers()</td>
+                      <td>creates the buffers for the compute shader</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>InitShader</td>
+                      <td>links the particle buffer, quad buffer to the particle material and the attached billboard shader</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchInit()</td>
+                      <td>dispatches the Init kernel of the compute shader</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DistpatchClearGrid()</td>
+                      <td> Dispatches the shader kernel clearing the grid cells</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchGridUpdate()</td>
+                      <td> dispatches shader kernel, that updates the grid</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchDensity()</td>
+                      <td> dispatche density estimation kernel</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchPressure()</td>
+                      <td>dispatches pressure estimation kernel</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchForces()</td>
+                      <td> dispatches force calculation kernel</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchPartialSums()</td>
+                      <td>dispatches kernel calculating the partial sums</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchMapParticles()</td>
+                      <td> dispatches particleMapping kernel</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>DispatchUpdate()</td>
+                      <td> dispatches kernel updating positions and velocity</td>
+                    </tr>
+
+                    <tr>
+                      <td>void</td>
+                      <td>ReleaseBuffers()</td>
+                      <td>Releases all buffers in OnDestroy() and OnDisable()</td>
+                    </tr>
+                </table>
+              </section>
+
+
+
+            <section>
+              <h4>Example Code</h4>
+              <div style="background-image:url('/images/screenshots/particleSystemInspector.PNG');background-size: contain;background-repeat: no-repeat; width:800px;height:800px"></div>
+            </section>
+          
+          </div>
+        </div>
+
+     
+        
+        <script src = "/javascript/loadhtml.js"></script>
+        </body>
+</html>
